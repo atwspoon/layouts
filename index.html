@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Tables & Forms</title>
+  </head>
+  <body>
+
+  </body>
+    <table>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="margin: auto;">
+            <td>1</td>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Steve</td>
+            <td>Witherspoon</td>
+            <td>89</td>
+          </tr>
+        </tbody>
+    </table>
+    <form action="http://google.com" method="get">
+  <p>
+      <label for="search">Search</label>
+      <input type="text" name="q1">
+      <!--replace "text" with "password" to turn them into dots"-->
+  </p>
+  <p>
+      <label>
+      <input type="radio" name="q2" value="yes">
+      Yes
+    </label>
+    <label>
+      <!-- if the radio buttons are both able to be selected, then
+      both names are not the same. all radio buttons must be named the same-->
+      <input type="radio" name="q2" value="no">
+      No
+    </label>
+  </p>
+  <p>
+      <label>
+      <input type="checkbox" name="q3[]" value="yes">
+      Yes
+    </label>
+    <label>
+      <input type="checkbox" name="q3[]" value="no">
+      No
+    </label>
+  </p>
+  <p>
+    <label for="select_box">Search</label>
+      <select name="q">
+      <option value="q1">Option1</option>
+      <option value="q2">Option 2</option>
+      <option value="q3">Option 3</option>
+      </select>
+  </p>
+  <p>
+    <label for="bigtextbox">
+      <!-- this is a textbox -->
+    <textarea name="q" id="big_textbox">
+    </textarea>
+  </p>
+      <button type="submit">Submit</button>
+    </form>
+</html>
